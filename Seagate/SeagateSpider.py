@@ -13,8 +13,12 @@ def find_between( s, first, last ):
 
 class SeagateSpider(SitemapSpider):
 	name = 'seagate'
-	sitemap_urls = ['http://www.seagate.com/sitemap1.xml.gz','http://www.seagate.com/sitemap2.xml.gz','http://www.seagate.com/sitemap3.xml.gz','http://www.seagate.com/sitemap4.xml.gz','http://www.seagate.com/sitemap5.xml.gz','http://www.seagate.com/sitemap6.xml.gz']
-	#sitemap_urls = ['http://www.seagate.com/sitemapindex.xml']
+	#sitemap_urls = ['http://www.seagate.com/sitemap1.xml.gz']
+	#sitemap_urls = ['http://www.seagate.com/sitemap2.xml.gz']
+	#sitemap_urls = ['http://www.seagate.com/sitemap3.xml.gz']
+	#sitemap_urls = ['http://www.seagate.com/sitemap4.xml.gz']
+	sitemap_urls = ['http://www.seagate.com/sitemap5.xml.gz']
+	#sitemap_urls = ['http://www.seagate.com/sitemap6.xml.gz']
 	sitemap_rules = [('/support/','parse_pdf')]
 
 	def parse_pdf(self, response):
